@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2><img src="./images/Airbnb-Logo.png" alt="logo Airbnb" id="logo_airbnb"></h2>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav">
+                    <l1 class="nav-item">
+                        <a class="nav-link active" href="#">Hospede em sua acomodação</a>
+                    </l1>
+                    <l1 class="nav-item">
+                        <a class="nav-link active" href="#">Hospede uma experiência</a>
+                    </l1>
+                    <l1 class="nav-item">
+                        <a class="nav-link active" href="#">Ajuda</a>
+                    </l1>
+                    <l1 class="nav-item">
+                        <a class="nav-link active" href="#">Entrar</a>
+                    </l1>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-pill btn-primary" id="primeiro">Cadastre-se</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lugares para ficar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Estadias longas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Experiências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Experiências Online</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-row" id="infos">
+            <div class="form-group col-md-4">
+                <label for="inputLocale">Localização</label>
+                <input type="text" class="form-control" placeholder="Para onde você vai?">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="check-in">Check-in</label>
+                <input type="date" id="checkin" class="form-control"  required >
+            </div>
+            <div class="form-group col-md-2" id="chekcout">
+                <label for="checkout">Checkout</label>
+                <input type="date" id="checkout" class="form-control" required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="qtdeHospedes">Hóspedes</label>
+                <input type="text" class="form-control" placeholder="Número de hópedes"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+            <div class="form-group col-md-2">
+                <button type="button" class="btn btn-primary">
+                    <img src="./images/lupa-branca.png" alt="lupa" id="lupa_svg"> 
+                    Buscar
+                </button>
+            </div>
+        </div>
+        
+        <!-- todos os quartos -->
+        <div class="row" id="row">
+        </div>
+         
+    </div>
+
+    <footer id="myFooter">
+        <div class="row">
+            <div class="col-sm-3">
+                <h5>SOBRE</h5>
+                <ul>
+                    <li><a href="#">Diversidade e pertencimento</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                    <li><a href="#">Confiança e segurança</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>COMUNIDADE</h5>
+                <ul>
+                    <li><a href="#">Airbnb Magazine</a></li>
+                    <li><a href="#">Airbnb for Work</a></li>
+                    <li><a href="">Convide amigos</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>ANFITRIÃO</h5>
+                <ul>
+                    <li><a href="#">Hospede em sua acomodação</a></li>
+                    <li><a href="#">Ofereça uma experiência</a></li>
+                    <li><a href="#">Hospedagem responsável</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>ATENDIMENTO</h5>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Atendimento ao Bairro</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container-fluid">
+        <div class="row" id="rodape">
+            <div class="col-md-12">
+                <footer id="rodape">
+                    <a href="https://github.com/beatrizadm"><img src="./images/github-logo.png" alt="github"></a>
+                    <p class="text">Desenvolvido por Beatriz Miranda © 2020 - Criado para fins de estudo.</p>
+                    <a href="https://www.linkedin.com/in/beatrizadm/"><img src="./images/linkedin-logo.png" alt="linkedin logo"></a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
